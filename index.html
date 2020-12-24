@@ -1,10 +1,198 @@
-<html>
+﻿<!DOCTYPE html>
+<html lang="ja">
 <head>
-<meta charset="utf-8">
-<title>doroido2020.github.ioのページの</title>
-<script data-ad-client="ca-pub-1263486197508805" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173462206-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-173462206-1');
+    </script>
+
+    <script data-ad-client="ca-pub-1263486197508805" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="20aGvdQ4txZAeyRpp3NowGkT2kevaPIN6lTZfUVZy9U" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@doroido2020">
+    <meta name="twitter:title" content="空港検疫の陽性結果の一覧とグラフ・検査実施人数グラフ・入院治療等を要する者の残数グラフ">
+    <meta name="twitter:image" content="https://doroido2020.github.io/previewImage.png">
+    <title>空港検疫における新型コロナウイルスの陽性結果一覧とグラフ</title>
+    <meta name="description" content="空港検疫、外国籍、コロナ、新型コロナ、新型コロナウイルス、厚生労働省、陽性、到着日、airport、quarantine、covid-19" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="640">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="mystyle.css" />
+    <link rel="stylesheet" type="text/css" href="myCssBaseClass.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- dataTables bootstrap4用 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <!-- dataTables bootstrap4用 -->
+    <!-- jquery.csv.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.11/jquery.csv.min.js"></script>
+    <!-- /jquery.csv.js -->
+
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="myscript.js"></script>
 </head>
-<body>
-doroido2020.github.ioのページの本文
+<body class='myCssBaseClass'>
+    <div class="loading_1">
+        <img src="https://doroido2020.github.io/images/loading.gif" alt='Loading image' />
+    </div>
+
+    <h1 class='h'><span class="iconify" data-icon="mdi-chart-timeline-variant" data-inline="false"></span> 空港検疫における新型コロナウイルスの陽性結果一覧とグラフ</h1>
+
+        <!-- 「すべて開く」、「すべて閉じる」ボタン -->
+        <div id='allBtn' style="text-align: left;">
+            <button id="btn-show-all" type="button" class="btn-flat-border">すべて開く</button>
+            <button id="btn-hide-all" type="button" class="btn-flat-border">すべて閉じる</button>
+        </div>
+
+
+
+
+        <table id="quarantine-Table" class="table table-bordered table-striped table-hover dt-responsive" role="grid" style="width:100%">
+            <caption class="quarantine-Table_cap" style="caption-side:top;text-align:left;">空港検疫の陽性結果一覧　<span class="iconify" data-icon="zmdi:smartphone-iphone" data-inline="false"></span><font size="1">左右にスワイプ</font><span class="iconify" data-icon="codicon:arrow-both" data-inline="false"></span></caption>
+            <thead>
+                <tr>
+                    <th>　</th>
+                    <th>事例</th>
+                    <th>対応</th>
+                    <th>発表日</th>
+                    <th>到着日</th>
+                    <th>年齢</th>
+                    <th>性別</th>
+                    <th>居住地</th>
+                    <th>行動歴</th>
+                    <th>症状</th>
+                    <th>備考</th>
+                </tr>
+            </thead>
+        </table>
+
+
+
+        <div class="loading is-hide">
+            <div class="loading_icon"></div>
+        </div>
+
+
+        <!-- -->    <div id="page_top"><a href="#"></a></div> <!-- -->
+        <!--
+        <div id="stop" class="scrollTop">
+        <a href="">Top</a>
+        </div>
+        -->
+
+        <br>
+        <!--ここにグラフが挿入されます-->
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart14" style="width: 100%; height:600px;"></canvas>
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart01" style="width: 100%; height:300px;"></canvas>
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart24" style="width: 100%; height:300px;"></canvas>
+        </div>
+        <br><br>
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart15" style="width: 100%; height:600px;"></canvas>
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart26" style="width: 100%; height:300px;"></canvas>
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart23" style="width: 100%; height:300px;"></canvas>
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart20" style="width: 100%; height:300px;"></canvas>
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart22" style="width: 100%; height:300px;"></canvas>
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart18" style="width: 100%; height:300px;"></canvas>
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart25" style="width: 100%; height:300px;"></canvas>
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart19" style="width: 100%; height:300px;"></canvas>
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart17" style="width: 100%; height:300px;"></canvas>
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart07" style="width: 100%; height:300px;"></canvas>
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart03" style="width: 100%; height:300px;"></canvas>
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart21" style="width: 100%; height:300px;"></canvas>
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart16" style="width: 100%; height:300px;"></canvas>
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart02" style="width: 100%; height:300px;"></canvas>
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart12" style="width: 100%; height:300px;"></canvas>
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart11" style="width: 100%; height:300px;"></canvas>
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart06" style="width: 100%; height:300px;"></canvas>
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart05" style="width: 100%; height:300px;"></canvas>
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart08" style="width: 100%; height:300px;"></canvas>
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart04" style="width: 100%; height:300px;"></canvas>
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart13" style="width: 100%; height:300px;"></canvas>
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart09" style="width: 100%; height:300px;"></canvas>
+        </div>
+        <div style="width: 100%; height: 100%;">
+            <canvas id="myChart10" style="width: 100%; height:300px;"></canvas>
+        </div>
+
+
+        <br>
+        <div class="myFooter">
+            ※1.事例50と同一人物（重複）のため、事例61は統計から削除される。<a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000121431_00191.html#h2_free3" target="_blank" rel="noopener">空港検疫事例2020年4月2日の記載箇所を参照</a><br>
+            ※2.「※1」での事例61の削除により、事例131が2つ存在するようになった模様。<a href="https://www.mhlw.go.jp/stf/newpage_10991.html" target="_blank" rel="noopener">令和2年4月22日（水）新型コロナウイルス感染症の無症状病原体保有者の発生及び過去の重複事例について（空港検疫）</a><br>
+            ※3.事例61は重複により統計から削除されため、グラフの到着日03/29の人数は-1された数値。<br>
+            ※4.発表日4/8の事例81～82は到着日が非公表であるが、厚労省の発表内容より到着日は3月で無症状の模様。<br>
+            ※5.発表日3/18～21の事例6～16は到着日が不明のため、発表日の前日を到着日と想定した。<br>
+            ※6.「空港検疫のPCR・抗原定量検査の合算実施人数」グラフの日付は、厚労省が毎日発表する「国内における新型コロナウイルスに係るPCR検査の実施状況（2020年○○月△△日掲載分）」というPDF内の数値を使用。
+        </div>
+        <br>
+
+
 </body>
 </html>
