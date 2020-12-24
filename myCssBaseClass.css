@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+.myCssBaseClass{
+	/*padding:0 10px;*/
+	padding:0 10px;
+}
+
+.myCssBaseClass h1.h,
+.myCssBaseClass h2.h,
+.myCssBaseClass h3.h{
+	font-family: 'Noto Sans Japanese', 'open-sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	line-height: 1.1;
+}
+.myCssBaseClass h1.h{
+ 	/*margin:2rem 0 0 0;*/
+ 	margin:0.5rem 0 0 0;
+ 	font-size:150%;
+}
+.myCssBaseClass h2.h{
+	padding:0 0 10px 0;
+	font-size:28px;
+	border-bottom:2px solid #666;
+	padding:0 0 10px 0;
+	border-bottom:2px solid #666;
+	margin:2rem 0;
+}
+.myCssBaseClass h3.h{
+	margin:4rem 0 2rem 0;
+	padding:0 0 10px 0;
+	border-bottom:1px dashed #666;
+	font-size:24px;
+}
+.myCssBaseClass pre.pre{
+	margin:2rem 0;
+	padding:20px;
+	background:#eee;
+	font-family:monospace;
+}
+.myCssBaseClass pre span{
+	line-height:1;
+	display:inline-block;
+}
