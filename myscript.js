@@ -219,10 +219,17 @@ function quarantine2() {
 // Child rowに入れるデータの形成
 function format(d) {
     return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
+
         '<tr>' +
         '<td>備考:</td>' +
         '<td>' + d[9] + '</td>' +
         '</tr>' +
+
+        '<tr>' +
+        '<td>記事URL:</td>' +
+        '<td>' + '<a href="' + d[11] + '" target="_blank" rel="noopener">' + d[11] + '</a>' + '</td>' +
+        '</tr>' +
+
         '</table>';
 }
 
@@ -307,10 +314,6 @@ $(document).ready(function () {
                     {
                         "data": 8,
                         "width": 100
-                    },
-                    {
-                        "data": 9,
-                        "width": 40
                     }
                 ],
                 "order": [[1, 'desc']],
@@ -319,7 +322,6 @@ $(document).ready(function () {
 
                 // 列設定
                 columnDefs: [
-
                     {
                         "targets": 3,
                         "render": function (data, type, row) {
@@ -330,10 +332,11 @@ $(document).ready(function () {
                                 return data;
                             }
                         }
-                    },
-
-                    { "targets": [10], visible: false },
+                    }
                 ]
+
+
+
             });
             $('#quarantine-Table tbody').on('click', 'td.details-control', function () {
 
