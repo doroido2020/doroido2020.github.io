@@ -230,6 +230,11 @@ function format(d) {
         '<td>' + '<a href="' + d[11] + '" target="_blank" rel="noopener">' + d[11] + '</a>' + '</td>' +
         '</tr>' +
 
+        '<tr>' +
+        '<td>報道機関記事</td>' +
+        '<td>' + '<a href="' + d[12] + '" target="_blank" rel="noopener">' + d[12] + '</a>' + '</td>' +
+        '</tr>' +
+
         '</table>';
 }
 
@@ -314,6 +319,10 @@ $(document).ready(function () {
                     {
                         "data": 8,
                         "width": 100
+                    },
+                    {
+                        "data": 9,
+                        "width": 100
                     }
                 ],
                 "order": [[1, 'desc']],
@@ -332,7 +341,10 @@ $(document).ready(function () {
                                 return data;
                             }
                         }
-                    }
+                    },
+
+                    { "targets": [10], visible: false }
+
                 ]
 
 
