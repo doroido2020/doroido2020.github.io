@@ -226,12 +226,12 @@ function format(d) {
         '</tr>' +
 
         '<tr>' +
-        '<td>記事URL:</td>' +
+        '<td>記事等URL1:</td>' +
         '<td>' + '<a href="' + d[11] + '" target="_blank" rel="noopener">' + d[11] + '</a>' + '</td>' +
         '</tr>' +
 
         '<tr>' +
-        '<td>報道機関記事</td>' +
+        '<td>記事等URL2</td>' +
         '<td>' + '<a href="' + d[12] + '" target="_blank" rel="noopener">' + d[12] + '</a>' + '</td>' +
         '</tr>' +
 
