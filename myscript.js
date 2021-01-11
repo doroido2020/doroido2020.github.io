@@ -325,7 +325,7 @@ $(document).ready(function () {
                         "width": 100
                     }
                 ],
-                "order": [[3, 'desc']],
+                "order": [[1, 'asc']],
 
 
 
