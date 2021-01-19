@@ -164,7 +164,7 @@ function drawMyChart(tmpData) {
     };
 
     // Chart.jsで描画
-    drawMyBarChart("myChart01", chartLabels, chartData01, '#007bff', "空港検疫全事例の到着日による陽性者数", 13, 35);
+    drawMyBarChart("myChart01", chartLabels, chartData01, '#007bff', "空港・海港検疫全事例の到着日による陽性者数", 13, 35);
     drawMyBarChart("myChart02", chartLabels, chartData02, '#4a0083', "居住地が東京都の到着日による陽性者数", 13, 35);
     drawMyBarChart("myChart03", chartLabels, chartData03, '#130da4', "居住地が千葉県の到着日による陽性者数", 13, 35);
     drawMyBarChart("myChart04", chartLabels, chartData04, "black"  , "行動歴が非公表等の到着日による陽性者数", 13, 35);
@@ -178,7 +178,7 @@ function drawMyChart(tmpData) {
     drawMyBarChart("myChart12", chartLabels, chartData12, '#ff0000', "居住地が神奈川県の到着日による陽性者数", 13, 35);
     drawMyBarChart("myChart13", chartLabels, chartData13, '#999999', "居住地が非公表等の到着日による陽性者数", 13, 35);
     drawRuisekiChart("myChart14", chartLabels, tmpData  , '#007bff', "空港検疫全事例の到着日による累計陽性者数");
-    drawMyBarChart("myChart15", chartLabels, chartData15, '#007bff', "空港検疫のPCR・抗原定量検査の合算実施人数 前日比", 0, 5000);
+    drawMyBarChart("myChart15", chartLabels, chartData15, '#007bff', "空港・海港検疫のPCR・抗原定量検査の前日比実施人数", 0, 5000);
     drawMyBarChart("myChart16", chartLabels, chartData16, '#e2223c', "居住地が埼玉県の到着日による陽性者数", 13, 35);
     drawMyBarChart("myChart17", chartLabels, chartData17, '#003f15', "パキスタン行動歴の到着日による陽性者数", 13, 35);
     drawMyBarChart("myChart18", chartLabels, chartData18, '#ffcc00', "インド行動歴の到着日による陽性者数", 13, 35);
