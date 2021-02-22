@@ -2120,7 +2120,7 @@
 2076,中部,2021-01-18,2021/01/17,10代,男性,愛知県,ベトナム,無症状,,,,
 2077,成田,2021-01-18,2021/01/17,50代,男性,山梨県,中国,無症状,,,,
 2078,成田,2021-01-18,2021/01/17,50代,男性,非公表,アメリカ,無症状,,,,
-2079,成田,2021-01-18,2021/01/18,20代,男性,新潟県,ベトナム,無症状,"※1月18日に公表した空港検疫の事例2079について、<br>公表内容に誤りがあったことが判明したことから、<br>当該事例を削除の上、事例番号を欠番にしております。<br>新型コロナウイルス感染症の無症状病原体保有者の発生について（空港・海 港検疫）：令和3年1月30日（土）<a href=""https://www.mhlw.go.jp/stf/newpage_16454.html"" target=""_blank"" rel=""noopener"">https://www.mhlw.go.jp/stf/newpage_16454.html</a><br><br>【以下の記事等URL1・2のPDFが掲載される場所】<br>検疫所における滞在国・地域別の検査検体数等について<a href=""https://www.mhlw.go.jp/stf/covid-19/kansenkakudaiboushi-iryouteikyou.html#h2_7"" target=""_blank"" rel=""noopener"">https://www.mhlw.go.jp/stf/covid-19/kansenkakudaiboushi-iryouteikyou.html#h2_7</a><br>新型コロナウイルス感染症の検査実績について（空港検疫）<a href=""https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000121431_00201.html"" target=""_blank"" rel=""noopener"">https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000121431_00201.html</a>",https://www.mhlw.go.jp/stf/newpage_16454.html,https://www.mhlw.go.jp/content/000693463.pdf,https://www.mhlw.go.jp/content/000736775.pdf
+2079,成田,2021-01-18,2021/01/18,20代,男性,新潟県,ベトナム,無症状,"※1月18日に公表した空港検疫の事例2079について、<br>公表内容に誤りがあったことが判明したことから、<br>当該事例を削除の上、事例番号を欠番にしております。<br>新型コロナウイルス感染症の無症状病原体保有者の発生について（空港・海 港検疫）：令和3年1月30日（土）<a href=""https://www.mhlw.go.jp/stf/newpage_16454.html"" target=""_blank"" rel=""noopener"">https://www.mhlw.go.jp/stf/newpage_16454.html</a><br><br>【以下の記事等URL1・2のPDFが掲載される場所】<br>検疫所における滞在国・地域別の検査検体数等について<a href=""https://www.mhlw.go.jp/stf/covid-19/kansenkakudaiboushi-iryouteikyou.html#h2_7"" target=""_blank"" rel=""noopener"">https://www.mhlw.go.jp/stf/covid-19/kansenkakudaiboushi-iryouteikyou.html#h2_7</a><br>新型コロナウイルス感染症の検査実績について（空港検疫）<a href=""https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000121431_00201.html"" target=""_blank"" rel=""noopener"">https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000121431_00201.html</a>",https://www.mhlw.go.jp/stf/newpage_16454.html,https://www.mhlw.go.jp/content/000740366.pdf,https://www.mhlw.go.jp/content/000736775.pdf
 2080,成田,2021-01-18,2021/01/18,60代,男性,非公表,メキシコ,無症状,,,,
 2081,関空,2021-01-18,2021/01/17,30代,女性,大阪府,ベトナム,無症状,厚労省2021年1月26日発表の変異株52人目 英国変異株<br>外国籍,,https://www.mhlw.go.jp/stf/newpage_16345.html,https://www.viet-jo.com/news/social/210127133440.html
 2082,成田,2021-01-18,2021/01/17,30代,女性,千葉県,ナイジェリア,無症状,,https://www.mhlw.go.jp/stf/newpage_16146.html,,
@@ -2382,3 +2382,10 @@
 2186,羽田,2021-02-20,2021/02/17,20代,男性,東京都,アイルランド<br>フランス<br>スイス,発熱、頭痛,,,,
 2187,成田,2021-02-20,2021/02/20,10代,女性,群馬県,フィリピン,無症状,,https://www.mhlw.go.jp/stf/newpage_16870.html,,
 2188,成田,2021-02-21,2021/02/20,30代,男性,栃木県,パキスタン,無症状,,https://www.mhlw.go.jp/stf/newpage_16878.html,,
+2189,羽田,2021-02-22,2021/02/21,20代,男性,非公表,アメリカ,無症状,,,,
+2190,関空,2021-02-22,2021/02/21,10代,女性,滋賀県,アメリカ,無症状,,https://www.mhlw.go.jp/stf/newpage_16905.html,,
+-174,なし,2021-02-22,なし,非公表,女性,京都府,海外滞在歴なし,2月上旬 陽性判明,厚労省2021年2月22日発表の変異株174人目 英国変異株<br><br>2月上旬 陽性判明<br>2月中旬 入院<br>・海外滞在歴なし<br>・不特定多数との接触なし,,,
+-175,なし,2021-02-22,なし,非公表,男性,京都府,海外滞在歴なし,2月上旬 陽性判明,厚労省2021年2月22日発表の変異株175人目 英国変異株<br><br>2月上旬 陽性判明<br>2月中旬 入院<br>・海外滞在歴なし<br>・不特定多数との接触なし,,,
+-176,なし,2021-02-22,なし,10代,男性,大阪府,海外滞在歴なし,1月下旬 発症,厚労省2021年2月22日発表の変異株176人目 英国変異株<br><br>1月下旬 発症<br>1月下旬 療養解除<br>・海外滞在歴なし<br>・No.5（変異株178人目）の濃厚接触者<br>・不特定多数との接触なし,,,
+-177,なし,2021-02-22,なし,40代,女性,大阪府,海外滞在歴なし,1月下旬 発症,厚労省2021年2月22日発表の変異株177人目 英国変異株<br><br>1月下旬 発症<br>2月上旬 療養解除<br>・海外滞在歴なし<br>・No.5（変異株178人目）の濃厚接触者<br>・不特定多数との接触なし,,,
+-178,なし,2021-02-22,なし,10代,男性,大阪府,海外滞在歴なし,1月中旬 発症,厚労省2021年2月22日発表の変異株178人目 英国変異株<br><br>1月中旬 発症<br>1月下旬 療養解除<br>・海外滞在歴なし<br>・不特定多数との接触なし,https://www.mhlw.go.jp/stf/newpage_16914.html,,
