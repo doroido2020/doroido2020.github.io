@@ -130,7 +130,7 @@ function drawMyChart(tmpData) {
         chartData06 = [], chartData07 = [], chartData08 = [], chartData09 = [], chartData10 = [],
         chartData11 = [], chartData12 = [], chartData13 = [], chartData15 = [], chartData16 = [],
         chartData17 = [], chartData18 = [], chartData19 = [], chartData20 = [], chartData21 = [],
-        chartData22 = [], chartData23 = [], chartData25 = [], chartData26 = [];
+        chartData22 = [], chartData23 = [], chartData25 = [], chartData26 = [], chartData27 = [];
 
     for (var row in tmpData) {
         chartLabels.push(tmpData[row][0]);
@@ -161,6 +161,8 @@ function drawMyChart(tmpData) {
 
         chartData25.push(tmpData[row][23]);
         chartData26.push(tmpData[row][24]);
+
+        chartData27.push(tmpData[row][25]);
     };
 
     // Chart.jsで描画
@@ -189,6 +191,7 @@ function drawMyChart(tmpData) {
     drawMyBarChart("myChart23", chartLabels, chartData23, '#d62718', "ロシア行動歴の到着日による陽性者数",13 ,35);
     drawMyBarChart("myChart25", chartLabels, chartData25, '#006a4d', "バングラデシュ行動歴の到着日による陽性者数",13 ,35);
     drawMyBarChart("myChart26", chartLabels, chartData26, '#001b69', "イギリス行動歴の到着日による陽性者数",13 ,35);
+    drawMyBarChart("myChart27", chartLabels, chartData27, '#ff0000', "アラブ首長国連邦行動歴の到着日による陽性者数",13 ,35);
 }
 
 
